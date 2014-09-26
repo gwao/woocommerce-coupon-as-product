@@ -61,6 +61,7 @@ if ( ! class_exists('CouponAsProduct') ) {
                 add_action( 'woocommerce_checkout_update_order_meta', __NAMESPACE__ . '\CouponAsProduct\ExtraFields::saveMOHOID' );
 
                 add_filter( 'woocommerce_order_item_name', __NAMESPACE__ . '\CouponAsProduct\ReviewCart::itemAppendCouponCode', 10, 2);
+                add_filter( 'woocommerce_is_purchasable', __NAMESPACE__ . '\CouponAsProduct\ProductMetaBox::limitCouponNotAvailableStore', 10, 2);
 
             } else {
                 add_action( 'admin_notices', __NAMESPACE__ . '\CouponAsProduct::WooCommerceNotActiveNotice' );

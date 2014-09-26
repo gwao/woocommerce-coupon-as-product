@@ -42,5 +42,12 @@ class ProductMetaBox
             update_post_meta( $postID, '_available_period', esc_attr( $availablePeriod ) );
         }
     }
+
+    public static function limitCouponNotAvailableStore( $isPurchable, $product )
+    {
+        $storeID = get_post_meta( $product->id, '_store_id', true);
+        if( !$storeID ) { return false; }
+        return $isPurchable;
+    }
 }
 
