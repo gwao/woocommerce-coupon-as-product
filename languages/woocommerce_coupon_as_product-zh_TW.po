@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Coupon as Product\n"
+"POT-Creation-Date: 2014-09-26 15:06+0800\n"
+"PO-Revision-Date: 2014-09-26 15:06+0800\n"
+"Last-Translator: 蒼時弦也 <elct9620@frost.tw>\n"
+"Language-Team: 蒼時弦也 <elct9620@frost.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/ExtraFields.class.php:15
+msgid "MOHO Information"
+msgstr "MOHO 資訊"
+
+#: includes/ExtraFields.class.php:20 includes/ExtraFields.class.php:21
+msgid "MOHO ID"
+msgstr ""
+
+#: includes/ExtraFields.class.php:30
+msgid "Please fill your MOHO ID to make sure your can receive your bonus."
+msgstr "請填寫您的 MOHO ID 確保可以收到紅利。"
+
+#: includes/ExtraFields.class.php:33
+msgid "This MOHO ID cannot be found, please check your MOHO ID."
+msgstr "這個 MOHO ID 無法被找到，請檢查您的 MOHO ID。"
+
+#: includes/ProductMetaBox.class.php:15
+msgid "Store ID"
+msgstr "店家編號"
+
+#: includes/ProductMetaBox.class.php:16
+msgid "Discount"
+msgstr "折扣比例"
+
+#: includes/ProductMetaBox.class.php:17
+msgid "Minimum Amount"
+msgstr "最低消費"
+
+#: includes/ProductMetaBox.class.php:18
+msgid "Available Period"
+msgstr "有效時間（天）"
+
+#: woocommerce-coupon-as-product.php:133
+msgid "You need active WooCommerce to make Coupon As Product working."
+msgstr "你需要啟用 WooCommerce 才能讓 Coupon As Product 正常運作。"
