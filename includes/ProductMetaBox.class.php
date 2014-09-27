@@ -46,7 +46,7 @@ class ProductMetaBox
     public static function limitCouponNotAvailableStore( $isPurchable, $product )
     {
         $storeID = get_post_meta( $product->id, '_store_id', true);
-        if( !$storeID ) { return false; }
+        if( $product->is_virtual() && $storeID == 0 ) { return false; }
         return $isPurchable;
     }
 }
