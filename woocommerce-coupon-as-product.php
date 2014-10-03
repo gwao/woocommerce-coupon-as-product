@@ -54,7 +54,8 @@ if ( ! class_exists('CouponAsProduct') ) {
                 add_action( 'woocommerce_process_product_meta_simple', __NAMESPACE__ . '\CouponAsProduct\ProductMetaBox::saveCouponProduct' );
                 add_action( 'woocommerce_product_options_general_product_data', __NAMESPACE__ . '\CouponAsProduct\ProductMetaBox::couponProductFields' );
 
-                add_action( 'woocommerce_payment_complete', __NAMESPACE__ . '\CouponAsProduct\PaymentComplete::completePayment' );
+                // add_action( 'woocommerce_payment_complete', __NAMESPACE__ . '\CouponAsProduct\PaymentComplete::completePayment' );
+                add_action( 'woocommerce_order_status_completed', __NAMESPACE__ . '\CouponAsProduct\PaymentComplete::completePayment' );
 
                 add_action( 'woocommerce_after_order_notes', __NAMESPACE__ . '\CouponAsProduct\ExtraFields::addMOHOID' );
                 add_action( 'woocommerce_checkout_process', __NAMESPACE__ . '\CouponAsProduct\ExtraFields::validateMOHOID');
